@@ -10,11 +10,11 @@ component {
   
   
   function onRequest( string targetPage ) {
-      if ( not structKeyExists(application, "sslfix") ) {
-        var abjSecurity = createObject("java", "java.security.Security");
-        abjSecurity.removeProvider("JsafeJCE");
-        application.sslfix = true;
-      }
+   //   if ( not structKeyExists(application, "sslfix") ) {
+   //     var abjSecurity = createObject("java", "java.security.Security");
+   //     abjSecurity.removeProvider("JsafeJCE");
+   //     application.sslfix = true;
+   //   }
         
       try {
           include arguments.targetPage;
