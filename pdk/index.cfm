@@ -7,7 +7,7 @@ Client Secret: 8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n
 	<cfhttpparam name="scope" value="openid" type="formfield">
 	<cfhttpparam name="client_id" value="5711250dfa29c412008f8077" type="formfield">
 	<cfhttpparam name="client_secret" value="8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n" type="formfield">
-	<cfhttpparam name="redirect_uri" value="https://secure.cybatrol.com/pdk/landing.cfm" type="formfield">
+	<cfhttpparam name="redirect_uri" value="https://cyb.fusiondevelopers.com/pdk/landing.cfm" type="formfield">
 	<cfhttpparam name="response_type" value="code" type="formfield">
 </cfhttp>
 
@@ -22,7 +22,12 @@ Client Secret: 8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n
 	<cfdump var="#blob#">
 </cfif>
 
-<!---<cfhttp url="https://pdk.io" method="post" result="blob">
+
+curl 'https://accounts.pdk.io/api/ous/mine' -H 
+'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJodHRwczovL2FjY291bnRzLnBkay5pby9yb2xlIjoiYWRtaW4iLCJhdF9oYXNoIjoiX01ZVVdRT3pSM3ZkbkRHQ1NvcWVGZSIsInNjb3BlIjpbIm9wZW5pZCJdLCJub25jZSI6IkVGRzBiZG1lYTVlUXVBZlV4MVhxZGFMZWE1STQzcm0xIiwiaXNMaWNlbmNlQWdyZWVtZW50QWNjZXB0ZWQiOnRydWUsImlhdCI6MTQ3MDE3Mjc5OSwiZXhwIjoxNDcwMTczMDk5LCJhdWQiOlsiaHR0cHM6Ly9hY2NvdW50cy5wZGsuaW8vIiwiNTQ0NTU3NzU5YTAxZGViOTg3NGMwMmVlIl0sImlzcyI6Imh0dHBzOi8vYWNjb3VudHMucGRrLmlvLyIsInN1YiI6IjU3MWU4MmI5ZTY4YjBhMTIwMDhjOGY4MSJ9.xAM7_OEtUwpIp9tU-HPJrHZAN4c5qqtfm_m2RDPuxHDZ6kMlJhggDwxPoVsqzXc5w5NTBi0M6JHszcdZkCrN1K1S2Vmrxa7f6KNCTEj90FA-LLkBXyxIBogGziO76rNgG9dLVr_Gqq4REFarQbNJDPcBAqVlqKxZWhyTxudyumbit7kxvW3ah4DBy9Q1kJaYNsriIwQuOTUQVKbSpmsIW2uKLzy1KCZf16E-cDN95tHDzD5XjPFsSsxFXEdfkkSCZcaDVm9-5IOnI7OmXbykny49AEIFJU6EKy5KmsbR3_SjWLbBsR5O6oTaS6bI3qT1K32Qc4Mv_vKGdtl63UdB6Q' -H 'Origin: https://pdk.io' -H 'Accept-Encoding: gzip, deflate, sdch, br' -H 'Accept-Language: en' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36' -H 'Accept: application/json, text/plain, */*' -H 
+'Referer: https://pdk.io/systems/mine' -H 
+'If-None-Match: W/"1be-9mYxGF7WHxysnTYlzQaZUw"' -H 'Connection: keep-alive' --compressed
+<!---<cfhttp url="https://accounts.pdk.io/api/ous/mine" method="post" result="blob">
 	<cfhttpparam type="header" name="mimetype" value="text/javascript" />
 	<cfhttpparam name="scope" value="openid" type="formfield">
 	<cfhttpparam name="client_id" value="5711250dfa29c412008f8077" type="formfield">
