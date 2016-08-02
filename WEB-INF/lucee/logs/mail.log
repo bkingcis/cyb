@@ -1,0 +1,423 @@
+"Severity","ThreadID","Date","Time","Application","Message"
+"ERROR","Thread-104","07/26/2016","06:23:57","","mail;timeout occurred after 30 seconds while sending mail message;javax.mail.MessagingException: timeout occurred after 30 seconds while sending mail message
+	at lucee.runtime.net.smtp.SMTPClient._send(SMTPClient.java:808)
+	at lucee.runtime.spooler.mail.MailSpoolerTask.execute(MailSpoolerTask.java:113)
+	at lucee.runtime.spooler.SpoolerTaskSupport._execute(SpoolerTaskSupport.java:103)
+	at lucee.runtime.spooler.SpoolerEngineImpl.execute(SpoolerEngineImpl.java:587)
+	at lucee.runtime.spooler.SpoolerEngineImpl$TaskThread.run(SpoolerEngineImpl.java:522)
+"
+"ERROR","Thread-178","07/26/2016","06:29:27","","mail;timeout occurred after 30 seconds while sending mail message;javax.mail.MessagingException: timeout occurred after 30 seconds while sending mail message
+	at lucee.runtime.net.smtp.SMTPClient._send(SMTPClient.java:808)
+	at lucee.runtime.spooler.mail.MailSpoolerTask.execute(MailSpoolerTask.java:113)
+	at lucee.runtime.spooler.SpoolerTaskSupport._execute(SpoolerTaskSupport.java:103)
+	at lucee.runtime.spooler.SpoolerEngineImpl.execute(SpoolerEngineImpl.java:587)
+	at lucee.runtime.spooler.SpoolerEngineImpl$TaskThread.run(SpoolerEngineImpl.java:522)
+"
+"ERROR","Thread-424","07/26/2016","07:29:57","","mail;timeout occurred after 30 seconds while sending mail message;javax.mail.MessagingException: timeout occurred after 30 seconds while sending mail message
+	at lucee.runtime.net.smtp.SMTPClient._send(SMTPClient.java:808)
+	at lucee.runtime.spooler.mail.MailSpoolerTask.execute(MailSpoolerTask.java:113)
+	at lucee.runtime.spooler.SpoolerTaskSupport._execute(SpoolerTaskSupport.java:103)
+	at lucee.runtime.spooler.SpoolerEngineImpl.execute(SpoolerEngineImpl.java:587)
+	at lucee.runtime.spooler.SpoolerEngineImpl$TaskThread.run(SpoolerEngineImpl.java:522)
+"
+"ERROR","Thread-4327","07/27/2016","07:29:57","","mail;Connection refused;lucee.runtime.exp.NativeException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:319)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:237)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:295)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: java.net.ConnectException: Connection refused
+	... 12 more
+"
+"ERROR","Thread-13014","07/27/2016","19:31:35","","mail;unable to find valid certification path to requested target;lucee.runtime.exp.NativeException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:354)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:211)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:295)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	... 24 more
+"
+"ERROR","Thread-13060","07/27/2016","19:35:16","","mail;unable to find valid certification path to requested target;lucee.runtime.exp.NativeException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:354)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:211)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:295)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	... 24 more
+"
+"ERROR","Thread-13080","07/27/2016","19:36:35","","mail;unable to find valid certification path to requested target;lucee.runtime.exp.NativeException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:354)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:211)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:295)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	... 24 more
+"
+"ERROR","Thread-13126","07/27/2016","19:40:16","","mail;unable to find valid certification path to requested target;lucee.runtime.exp.NativeException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1491)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.sun.mail.util.SocketFetcher.configureSSLSocket(SocketFetcher.java:549)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:354)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:211)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:295)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	... 24 more
+"
+"ERROR","Thread-13815","07/27/2016","20:36:36","","mail;535 Authentication Failed for bking@fusiondevelopers.com
+;lucee.runtime.exp.NativeException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	... 5 more
+"
+"ERROR","Thread-13862","07/27/2016","20:40:17","","mail;535 Authentication Failed for bking@fusiondevelopers.com
+;lucee.runtime.exp.NativeException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	... 5 more
+"
+"ERROR","Thread-7102","07/28/2016","07:29:58","","mail;535 Authentication Failed for bking@fusiondevelopers.com
+;lucee.runtime.exp.NativeException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	... 5 more
+"
+"ERROR","Thread-12205","07/28/2016","14:35:02","","mail;535 Authentication Failed for bking@fusiondevelopers.com
+;lucee.runtime.exp.NativeException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	... 5 more
+"
+"ERROR","Thread-12269","07/28/2016","14:40:03","","mail;535 Authentication Failed for bking@fusiondevelopers.com
+;lucee.runtime.exp.NativeException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	... 5 more
+"
+"ERROR","Thread-12993","07/28/2016","15:40:04","","mail;535 Authentication Failed for bking@fusiondevelopers.com
+;lucee.runtime.exp.NativeException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	... 5 more
+"
+"ERROR","Thread-14030","07/28/2016","17:06:16","","mail;535 Authentication Failed for bking@fusiondevelopers.com
+;lucee.runtime.exp.NativeException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	... 5 more
+"
+"ERROR","Thread-14038","07/28/2016","17:07:13","","mail;timeout occurred after 30 seconds while sending mail message;javax.mail.MessagingException: timeout occurred after 30 seconds while sending mail message
+	at lucee.runtime.net.smtp.SMTPClient._send(SMTPClient.java:808)
+	at lucee.runtime.spooler.mail.MailSpoolerTask.execute(MailSpoolerTask.java:113)
+	at lucee.runtime.spooler.SpoolerTaskSupport._execute(SpoolerTaskSupport.java:103)
+	at lucee.runtime.spooler.SpoolerEngineImpl.execute(SpoolerEngineImpl.java:587)
+	at lucee.runtime.spooler.SpoolerEngineImpl$TaskThread.run(SpoolerEngineImpl.java:522)
+"
+"ERROR","Thread-14095","07/28/2016","17:11:46","","mail;timeout occurred after 30 seconds while sending mail message;javax.mail.MessagingException: timeout occurred after 30 seconds while sending mail message
+	at lucee.runtime.net.smtp.SMTPClient._send(SMTPClient.java:808)
+	at lucee.runtime.spooler.mail.MailSpoolerTask.execute(MailSpoolerTask.java:113)
+	at lucee.runtime.spooler.SpoolerTaskSupport._execute(SpoolerTaskSupport.java:103)
+	at lucee.runtime.spooler.SpoolerEngineImpl.execute(SpoolerEngineImpl.java:587)
+	at lucee.runtime.spooler.SpoolerEngineImpl$TaskThread.run(SpoolerEngineImpl.java:522)
+"
+"ERROR","Thread-14109","07/28/2016","17:12:43","","mail;timeout occurred after 30 seconds while sending mail message;javax.mail.MessagingException: timeout occurred after 30 seconds while sending mail message
+	at lucee.runtime.net.smtp.SMTPClient._send(SMTPClient.java:808)
+	at lucee.runtime.spooler.mail.MailSpoolerTask.execute(MailSpoolerTask.java:113)
+	at lucee.runtime.spooler.SpoolerTaskSupport._execute(SpoolerTaskSupport.java:103)
+	at lucee.runtime.spooler.SpoolerEngineImpl.execute(SpoolerEngineImpl.java:587)
+	at lucee.runtime.spooler.SpoolerEngineImpl$TaskThread.run(SpoolerEngineImpl.java:522)
+"
+"ERROR","Thread-14826","07/28/2016","18:11:47","","mail;535 Authentication Failed for bking@fusiondevelopers.com
+;lucee.runtime.exp.NativeException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	... 5 more
+"
+"ERROR","Thread-14840","07/28/2016","18:13:13","","mail;timeout occurred after 30 seconds while sending mail message;javax.mail.MessagingException: timeout occurred after 30 seconds while sending mail message
+	at lucee.runtime.net.smtp.SMTPClient._send(SMTPClient.java:808)
+	at lucee.runtime.spooler.mail.MailSpoolerTask.execute(MailSpoolerTask.java:113)
+	at lucee.runtime.spooler.SpoolerTaskSupport._execute(SpoolerTaskSupport.java:103)
+	at lucee.runtime.spooler.SpoolerEngineImpl.execute(SpoolerEngineImpl.java:587)
+	at lucee.runtime.spooler.SpoolerEngineImpl$TaskThread.run(SpoolerEngineImpl.java:522)
+"
+"ERROR","Thread-16571","07/28/2016","20:36:37","","mail;535 Authentication Failed for bking@fusiondevelopers.com
+;lucee.runtime.exp.NativeException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	... 5 more
+"
+"ERROR","Thread-16618","07/28/2016","20:40:18","","mail;535 Authentication Failed for bking@fusiondevelopers.com
+;lucee.runtime.exp.NativeException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685)
+	at javax.mail.Service.connect(Service.java:317)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:58)
+Caused by: javax.mail.AuthenticationFailedException: 535 Authentication Failed for bking@fusiondevelopers.com
+
+	... 5 more
+"
+"ERROR","Thread-30312","07/29/2016","15:40:05","","mail;550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+;lucee.runtime.exp.NativeException: 550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:61)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+
+	... 3 more
+"
+"ERROR","Thread-32136","07/29/2016","18:11:49","","mail;550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+;lucee.runtime.exp.NativeException: 550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:61)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+
+	... 3 more
+"
+"ERROR","Thread-32158","07/29/2016","18:13:44","","mail;Connection closed by remote host;lucee.runtime.exp.NativeException: Connection closed by remote host
+	at sun.security.ssl.SSLSocketImpl.checkWrite(SSLSocketImpl.java:1555)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:71)
+	at com.sun.mail.util.TraceOutputStream.write(TraceOutputStream.java:128)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.sun.mail.smtp.SMTPTransport.sendCommand(SMTPTransport.java:2155)
+	at com.sun.mail.smtp.SMTPTransport.sendCommand(SMTPTransport.java:2144)
+	at com.sun.mail.smtp.SMTPTransport.issueCommand(SMTPTransport.java:2068)
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1753)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:61)
+Caused by: java.net.SocketException: Connection closed by remote host
+	... 11 more
+"
+"ERROR","Thread-33882","07/29/2016","20:36:39","","mail;550-Verification failed for <DashPass@cybatrol.com>
+550-No Such User Here""
+550 DashPass@cybatrol.com is not a valid address: Sender verify failed
+;lucee.runtime.exp.NativeException: 550-Verification failed for <DashPass@cybatrol.com>
+550-No Such User Here""
+550 DashPass@cybatrol.com is not a valid address: Sender verify failed
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:61)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Verification failed for <DashPass@cybatrol.com>
+550-No Such User Here""
+550 DashPass@cybatrol.com is not a valid address: Sender verify failed
+
+	... 3 more
+"
+"ERROR","Thread-33931","07/29/2016","20:40:20","","mail;Connection closed by remote host;lucee.runtime.exp.NativeException: Connection closed by remote host
+	at sun.security.ssl.SSLSocketImpl.checkWrite(SSLSocketImpl.java:1555)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:71)
+	at com.sun.mail.util.TraceOutputStream.write(TraceOutputStream.java:128)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.sun.mail.smtp.SMTPTransport.sendCommand(SMTPTransport.java:2155)
+	at com.sun.mail.smtp.SMTPTransport.sendCommand(SMTPTransport.java:2144)
+	at com.sun.mail.smtp.SMTPTransport.issueCommand(SMTPTransport.java:2068)
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1753)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:61)
+Caused by: java.net.SocketException: Connection closed by remote host
+	... 11 more
+"
+"ERROR","Thread-47611","07/30/2016","15:40:07","","mail;550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+;lucee.runtime.exp.NativeException: 550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:61)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+
+	... 3 more
+"
+"ERROR","Thread-49436","07/30/2016","18:11:50","","mail;550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+;lucee.runtime.exp.NativeException: 550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1715)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:61)
+Caused by: com.sun.mail.smtp.SMTPAddressFailedException: 550-Verification failed for <signup@cybatrol.com>
+550-No Such User Here""
+550 signup@cybatrol.com is not a valid address: Sender verify failed
+
+	... 3 more
+"
+"ERROR","Thread-49463","07/30/2016","18:14:14","","mail;Connection closed by remote host;lucee.runtime.exp.NativeException: Connection closed by remote host
+	at sun.security.ssl.SSLSocketImpl.checkWrite(SSLSocketImpl.java:1555)
+	at sun.security.ssl.AppOutputStream.write(AppOutputStream.java:71)
+	at com.sun.mail.util.TraceOutputStream.write(TraceOutputStream.java:128)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.sun.mail.smtp.SMTPTransport.sendCommand(SMTPTransport.java:2155)
+	at com.sun.mail.smtp.SMTPTransport.sendCommand(SMTPTransport.java:2144)
+	at com.sun.mail.smtp.SMTPTransport.issueCommand(SMTPTransport.java:2068)
+	at com.sun.mail.smtp.SMTPTransport.rcptTo(SMTPTransport.java:1753)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1118)
+	at lucee.runtime.net.smtp.SMTPSender.run(SMTPSender.java:61)
+Caused by: java.net.SocketException: Connection closed by remote host
+	... 11 more
+"

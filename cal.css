@@ -1,0 +1,70 @@
+td .calDayBox, .preselectedBox {
+	font-size: 12px;
+	height: 20px;
+	text-align: center;color:black;
+}
+
+.calDayBox {
+	background-color: #efefef; color: black;
+}
+
+.calEventBox {
+	background-color: #ee7; color: black; border:1px solid #666;
+	font-size: 11px;
+height: 20px;
+text-align: center;
+}
+.calGuestBox {
+	background-color: #74dd82; color: black;border:1px solid #666;font-size: 11px;
+height: 20px;
+text-align: center;
+}
+.calBothBox {
+	background-image:url('/images/cal-background.gif'); color: black; border:1px solid #666;
+	font-size: 11px;
+	height: 20px;
+	text-align: center;
+	background-repeat:no-repeat;
+	background-color:#ee7;
+}
+
+.calEventBoxHover {background-color: #ffc; color: black;border:1px solid #666;cursor:hand;font-size: 11px;
+	height: 20px;
+	text-align: center;}
+.calGuestBoxHover {background-color: #c3d9ff; color: black;border:1px solid #666;cursor:hand;font-size: 11px;
+	height: 20px;
+	text-align: center;}
+
+#calEventBoxHeader {
+	background-color: #444; color: white;padding:2px;
+}
+
+#popBox {position:absolute;
+		z-index:4;
+		display:none;
+		text-align:center;
+		padding: 5px;
+		width:180px;
+		font-size:8pt;
+		height:120px;
+		background-color:#eee;
+		border: 1px solid black}
+		
+.selectedBox {text-align: center;font-size:12px;color:black;} 
+.preselectedBox {background-color: #ff6;text-align: center;font-size:12px;color:black;}
+.popBox ul {
+	list-style-type: none;
+	margin:0; padding:0;}
+.popBox li {
+	margin:0;padding:0;font-weight:100;}		
+	
+.calEventBox ul {
+	list-style-type:none;margin:0;padding:0;color:black;}
+.calEventBox li {
+	margin:0;padding:0;font-weight:100;color:black;}
+
+.row0 {background-color: #eee;font-weight:100;}
+.row1 {background-color: #fff;font-weight:100;}
+
+.row0 a {font-weight:600;}
+.row1 a {font-weight:600;}

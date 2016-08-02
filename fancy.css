@@ -1,0 +1,50 @@
+label {display:block; width: 200px; float:left;clear:both;}
+/* input, select {font-size: 1.0em;} */
+#fieldbox {width:400; text-align:left;margin: 3px auto;}
+ #popUpContainer {
+ 	margin:0;
+	padding: 0 20px 65px 10px;
+	overflow:auto;
+	background-color: #0071BE;	height:100%;/* 5996cd */
+	text-align: center; font-family: Arial;	
+ }
+#popUpContainer td {
+  color: white;
+ }
+ #popUpContainer h1 {text-transform:uppercase;font-size:1.5em;color: white;
+	 font-weight:100;font-family:Arial;margin-bottom:8px;border-bottom:1px solid silver;}
+ #popUpContainer h2 {text-transform:uppercase;font-weight:600;font-family:Arial; font-size:1.1em; color: white;}	
+
+#popUpContainer .calDayBox,
+#popUpContainer .calEventBox,
+#popUpContainer .calGuestBox,
+#popUpContainer .calGuestBoxHover,
+#popUpContainer .preselectedBox, 
+#popUpContainer .datatableHdr,
+#popUpContainer .notcheckedinRow td,
+#popUpContainer .checkedinRowHover td,
+#popUpContainer .checkedinRow,
+#popUpContainer .datatableHdr td,
+#popUpContainer td .datatableHdr,
+#popUpContainer .inputForm td {
+	color:black;
+}
+
+#guestShowBox {color:white;}
+
+ #popUpAlert {
+ 	margin:0;padding:0 10px;overflow:auto;
+	background-color: #0071BE;height:200px;	
+	text-align: center; font-family: Arial;		
+ }
+ #popUpAlert h1 {color: white;font-weight:100;font-family:Arial;margin-bottom:0;}
+ 
+.datatableHdr  {background-color:#c0c0c0; color: black; font-size: 13px; font-weight: 600;}
+.checkedinRow {background-color:#ccffcc;}
+	.checkedinRow td {font-size:10px;}
+.checkedinRowHover {background-color:#efefef;}
+	.checkedinRowHover td {font-size:10px;}
+.notcheckedinRow {background-color:#aaeeaa;}
+	.notcheckedinRow td {font-size:10px;}
+.notcheckedinRowHover {background-color:#efefef;}
+	.notcheckedinRowHover td {font-size:10px;}

@@ -1,0 +1,162 @@
+body {
+	margin:0;
+	padding:0;
+}
+
+body.signup { background-image: url(https://cdn2.editmysite.com/images/editor/theme-background/stock/City-New-York-Arial.jpg);   /*/img/footer-bg.jpg */
+			background-repeat: no-repeat;
+			 }
+
+/* .home {
+	background-image: url(/img/bodyBG.jpg);
+	background-repeat: repeat-x;
+	background-position: 0 -1px;
+} */
+
+a {
+	color: #d1942f;
+}
+#header {
+	/* background-image: url(https://cdn2.editmysite.com/images/editor/theme-background/stock/City-New-York-Arial.jpg);
+	background-repeat: no-repeat; */
+	height: 68px;
+	width:100%;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+}
+#content {
+	width: 1010px;
+	height: 800px;
+	margin: 0 auto;
+}
+#logo {
+	background-image:url(/img/logo-tab.png);
+	background-repeat: no-repeat;
+	width: 361px;
+	height: 68px;
+	z-index: 3;
+	position: absolute;
+	top: 0;
+}
+#phone {
+	margin: 0 auto;
+	width: 800px;
+	height: 68px;
+	background-image: url(/img/phonegraphic.png);
+	background-position: right 0;
+	background-repeat: no-repeat;
+}	
+#hero {
+	background-color: white;
+	position:absolute;
+	z-index: 1;
+	height: 308px;
+	width: 100%;
+}
+#herocontent {
+	height: 280px;
+	position:absolute;
+	z-index: 1;
+	margin-top: 25px;
+}
+
+#container {
+	position:absolute;
+	z-index: 0;
+	background-color: #3489c1;
+	background-image: url(/img/container-bg.jpg);
+	background-repeat: repeat-x;
+	height: 688px;
+	width: 100%;
+}
+
+#popUpContainer {
+	background-color: #243748;
+	font-family: Arial;
+	color: white;
+	text-align:center;
+	min-height: 300px;
+}
+
+#popUpContainer h1 {
+	padding: 2px 0 0;
+	/*font: 22pt Arial;*/
+}
+#popUpContainer h2 {
+	font: 18pt Arial;
+	font-weight: 100;
+}
+#popUpContainer input {
+	font: 14pt Arial;
+}
+
+#bodyleft {
+	margin-top: 50px;
+	width: 620px;
+	float:left;
+}
+#bodyleft p {
+	margin:6px 28px;
+	font: 12pt Arial;
+	color: #fefefe;
+}
+#bodyright {
+	margin-top: 50px;
+	padding-left: 25px;
+	width: 255px;
+	float: left;
+	border-left: 1px solid #3b88BC;
+}
+#footer {
+	/* background-image: url(https://cdn2.editmysite.com/images/editor/theme-background/stock/City-New-York-Arial.jpg); ///img/footer-bg.jpg
+	background-repeat: no-repeat; */
+	height: 225px;
+	text-align:center;
+	padding: 5px;
+	color: white;
+	font: 11pt Arial;
+	display: none;
+}
+#footer a {
+	color: #d1942f;
+}
+label {
+	float: left;
+	padding: 4px;
+	font: 11pt Arial;
+	color: #999;
+}
+.signup label {
+	color: #999;
+}
+.rounded {
+	border-radius: 8px;
+}
+.video {
+	height: 145px;
+	color: white;
+	font: 11pt Arial;
+}
+.quote {
+	font-family: Arial;
+	font-style: italic;
+	font-weight: 600;
+	font-size: 15px;
+	color: white;
+	margin: 15px 0;
+	padding: 0;
+}
+.bodycontent {
+	margin: 0 25px 25px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #3b88BC;
+}
+.lrgLink {
+	font: 14px Arial bold;
+	color: white;
+}
+.divider {
+	margin: 5px 0 12px;
+	border-bottom: 1px solid #3b88BC;
+}

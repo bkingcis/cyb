@@ -1,0 +1,4 @@
+psql
+exit
+psql
+exit
