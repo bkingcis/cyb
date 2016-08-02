@@ -7,7 +7,8 @@ Client Secret: 8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n
 <cfset objSecurity = createObject("java", "java.security.Security") /> 
 <cfset storeProvider = objSecurity.getProvider("JsafeJCE") /> 
 <cfset objSecurity.removeProvider("JsafeJCE") /> --->
-<cfhttp url="https://accounts.pdk.io/oauth2/auth" method="post" result="blob">
+
+<cfhttp url="https://accounts.pdk.io/oauth2/auth" method="post" result="json">
 	<cfhttpparam type="header" name="mimetype" value="text/javascript" />
 	<cfhttpparam name="scope" value="openid" type="formfield">
 	<cfhttpparam name="client_id" value="5711250dfa29c412008f8077" type="formfield">
@@ -23,9 +24,18 @@ Client Secret: 8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n
 	<cfelse>
 		<cfdump var="#bearerTokenResponse#">
 	</cfif>
-<cfelse>NOT JSON
+<cfelse>NOT JSON - DATA
 	<cfdump var="#blob#">
 </cfif>
+
+<!--- <cfhttp url="https://pdk.io" method="post" result="blob">
+	<cfhttpparam type="header" name="mimetype" value="text/javascript" />
+	<cfhttpparam name="scope" value="openid" type="formfield">
+	<cfhttpparam name="client_id" value="5711250dfa29c412008f8077" type="formfield">
+	<cfhttpparam name="client_secret" value="8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n" type="formfield">
+	<cfhttpparam name="redirect_uri" value="https://secure.cybatrol.com/pdk/landing.cfm" type="formfield">
+	<cfhttpparam name="response_type" value="code" type="formfield">
+</cfhttp> ---->
 
 	<cfabort>
 
