@@ -1,14 +1,8 @@
  <h1>Hello World</h1>
  Client ID: 5711250dfa29c412008f8077
 Client Secret: 8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n
-<!---
-<cfdump var="#server#">
 
-<cfset objSecurity = createObject("java", "java.security.Security") /> 
-<cfset storeProvider = objSecurity.getProvider("JsafeJCE") /> 
-<cfset objSecurity.removeProvider("JsafeJCE") /> --->
-
-<cfhttp url="https://accounts.pdk.io/oauth2/auth" method="post" result="json">
+<cfhttp url="https://accounts.pdk.io/oauth2/auth" method="post" result="blob">
 	<cfhttpparam type="header" name="mimetype" value="text/javascript" />
 	<cfhttpparam name="scope" value="openid" type="formfield">
 	<cfhttpparam name="client_id" value="5711250dfa29c412008f8077" type="formfield">
@@ -16,7 +10,7 @@ Client Secret: 8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n
 	<cfhttpparam name="redirect_uri" value="https://secure.cybatrol.com/pdk/landing.cfm" type="formfield">
 	<cfhttpparam name="response_type" value="code" type="formfield">
 </cfhttp>
-<!---<cfset objSecurity.insertProviderAt(storeProvider, 1) /> --->
+
 <cfif isJSoN(blob)>IS JSON
 	<cfset bearerTokenResponse = DeserializeJSON(blob)>
 	<cfif isDefined("bearerTokenResponse.access_token")>
@@ -28,7 +22,7 @@ Client Secret: 8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n
 	<cfdump var="#blob#">
 </cfif>
 
-<!--- <cfhttp url="https://pdk.io" method="post" result="blob">
+<!---<cfhttp url="https://pdk.io" method="post" result="blob">
 	<cfhttpparam type="header" name="mimetype" value="text/javascript" />
 	<cfhttpparam name="scope" value="openid" type="formfield">
 	<cfhttpparam name="client_id" value="5711250dfa29c412008f8077" type="formfield">
