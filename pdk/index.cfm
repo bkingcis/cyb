@@ -5,6 +5,8 @@ Client Secret: 8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n
 <cfhttp url="https://accounts.pdk.io/oauth2/auth" method="post" result="blob">
 	<cfhttpparam type="header" name="mimetype" value="text/javascript" />
 	<cfhttpparam name="scope" value="openid" type="formfield">
+	<cfhttpparam name="email" value="billking@cybatrol.com" type="formfield">
+	<cfhttpparam name="password" value="pdk4ker" type="formfield">
 	<cfhttpparam name="client_id" value="5711250dfa29c412008f8077" type="formfield">
 	<cfhttpparam name="client_secret" value="8wNZdjCpCZpOaLh7kYP5pJQNQAwJBL0n" type="formfield">
 	<cfhttpparam name="redirect_uri" value="https://cyb.fusiondevelopers.com/pdk/landing.cfm" type="formfield">
