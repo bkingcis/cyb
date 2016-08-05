@@ -1,5 +1,4 @@
 <cflocation url="login.cfm" addtoken="false" >
-<cfimport prefix="v" taglib="/admin/view">
 
 <cfinclude template="view/headeradmin.cfm">
 	<div style="text-align:center;margin:30px;"><img src="http://www.cybatrol.com/uploads/7/1/7/8/7178896/1427841630.png"></div><br />
