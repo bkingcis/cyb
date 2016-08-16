@@ -34,7 +34,7 @@
 		 <cfif qEventTypes.recordcount>
 		 <input class="jumpBtn btn btn-small action-btn" title="Add or Edit Special Events" type="button" value="Special Events" id="eventsBtn" hrefVal="events.cfm" />
 		 </cfif>
-		 <cfif isDefined("getCommunity.track_maintenance_requests") and getCommunity.track_maintenance_requests>
+		 <cfif isDefined("getCommunity.track_maintenance_requests") and val(getCommunity.track_maintenance_requests)>
 		 <input class="jumpBtn btn btn-small action-btn" title="Maintenance Requests" type="button" value="Maintenance" id="maintBtn" hrefVal="maintenance.cfm" />
 		 </cfif>
 		 <input class="jumpBtn btn btn-small action-btn" title="Parcel/Package Reciept or Delivery" type="button" value="Parcel/Package" id="parcelBtn" hrefVal="parcel.cfm" />
