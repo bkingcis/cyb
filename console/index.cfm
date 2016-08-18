@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<cfquery name="getCommunity" datasource="#request.dsn#">
+	select * from communities 
+	where c_id = <cfqueryparam cfsqltype="CF_SQL_INTEGER" value="55" />
+</cfquery>
 <head>
 
     <meta charset="utf-8">
@@ -375,7 +378,7 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped">
+                                        <!---<table class="table table-bordered table-hover table-striped">
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
@@ -383,58 +386,13 @@
                                                     <th>Time</th>
                                                     <th>Amount</th>
                                                 </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>3326</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:29 PM</td>
-                                                    <td>$321.33</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3325</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:20 PM</td>
-                                                    <td>$234.34</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3324</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:03 PM</td>
-                                                    <td>$724.17</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3323</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:00 PM</td>
-                                                    <td>$23.71</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3322</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:49 PM</td>
-                                                    <td>$8345.23</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3321</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:23 PM</td>
-                                                    <td>$245.12</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3320</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:15 PM</td>
-                                                    <td>$5663.54</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3319</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:13 PM</td>
-                                                    <td>$943.45</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                            </thead> --->
+                                          <cfinclude template="/staff/include/currentAccess.cfm">
+                                          <cfif NOT isDefined('url.viewhour')>
+                                          <cfif val(getCommunity.permanantguests)>
+                                          <cfinclude template="/staff/include/247Access.cfm">
+                                          </cfif><!--- end community 24/7 IF block --->
+                                          </cfif>
                                     </div>
                                     <!-- /.table-responsive -->
                                 </div>
