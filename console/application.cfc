@@ -55,6 +55,8 @@
             type="string"
             required="true"
             />
+            
+            <cfinclude template="../config.cfm">
 
         <!--- Return out. --->
         <cfreturn true />
