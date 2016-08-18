@@ -275,7 +275,7 @@
                             <a href="Visitors.cfm"><i class="fa fa-table fa-fw"></i> Visitors</a>
                         </li>
                         <li>
-                            <a href="Personnel.cfm"><i class="fa fa-edit fa-fw"></i> Personnel</a>
+                            <a href="Personnel.cfm"><i class="fa fa-users fa-fw"></i> Personnel</a>
                         </li>
                         <li>
                             <a href="Homesites.cfm"><i class="fa fa-home fa-fw"></i> Homesites</a>
