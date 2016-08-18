@@ -57,6 +57,13 @@
             />
             
             <cfinclude template="../config.cfm">
+            <cfparam name="session.TIMEZONEADJ" default="0">
+            <cfscript>
+               application.respref = '';
+               application.respath = '';
+               application.absroot = '';
+               request.timezoneadjustednow  = dateAdd('h',session.timezoneadj,now());
+            </cfscript>
 
         <!--- Return out. --->
         <cfreturn true />
