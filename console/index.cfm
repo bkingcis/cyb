@@ -349,7 +349,7 @@
                     <!-- /.panel -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> #labels.permanent_visitor# #labels.visitor#s
+                            <i class="fa fa-bar-chart-o fa-fw"></i> <cfoutput>#labels.permanent_visitor# #labels.visitor#s</cfoutput>
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -386,6 +386,7 @@
                                             </thead> --->
                                           <cftry>
                                           <cfset session.user_community = 55>
+                                          <cfset request.hidesubtitle = true>
                                           <cfquery name="getCommunity" datasource="#request.dsn#">
                                             select * from communities 
                                             where c_id = <cfqueryparam cfsqltype="CF_SQL_INTEGER" value="#session.user_community#" />
