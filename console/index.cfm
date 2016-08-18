@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<cfquery name="getCommunity" datasource="#request.dsn#">
-	select * from communities 
-	where c_id = <cfqueryparam cfsqltype="CF_SQL_INTEGER" value="55" />
-</cfquery>
+
 <head>
 
     <meta charset="utf-8">
@@ -387,12 +384,21 @@
                                                     <th>Amount</th>
                                                 </tr>
                                             </thead> --->
+                                          <cftry>
+                                          <cfquery name="getCommunity" datasource="#request.dsn#">
+                                            select * from communities 
+                                            where c_id = <cfqueryparam cfsqltype="CF_SQL_INTEGER" value="55" />
+                                          </cfquery>
                                           <cfinclude template="/staff/include/currentAccess.cfm">
                                           <cfif NOT isDefined('url.viewhour')>
                                           <cfif val(getCommunity.permanantguests)>
                                           <cfinclude template="/staff/include/247Access.cfm">
                                           </cfif><!--- end community 24/7 IF block --->
                                           </cfif>
+                                          <cfcatch>
+                                          <cfoutput>#cfcatch.message#</cfoutput>
+                                          </cfcatch>
+                                          </cftry>
                                     </div>
                                     <!-- /.table-responsive -->
                                 </div>
