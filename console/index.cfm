@@ -278,10 +278,10 @@
                             <a href="Personnel.cfm"><i class="fa fa-edit fa-fw"></i> Personnel</a>
                         </li>
                         <li>
-                            <a href="Homesites.cfm"><i class="fa fa-bar-chart-o fa-fw"></i> Homesites</a>
+                            <a href="Homesites.cfm"><i class="fa fa-home fa-fw"></i> Homesites</a>
                         </li>
                         <li>
-                            <a href="Devices.cfm"><i class="fa fa-bar-chart-o fa-fw"></i> Devices</a>
+                            <a href="Devices.cfm"><i class="fa fa-unlock-alt fa-fw"></i> Devices</a>
                         </li>
                         <!---
                         <li>
