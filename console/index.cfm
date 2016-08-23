@@ -391,10 +391,10 @@
                                             select * from communities 
                                             where c_id = <cfqueryparam cfsqltype="CF_SQL_INTEGER" value="#session.user_community#" />
                                           </cfquery>
-                                          <cfinclude template="/staff/include/currentAccess.cfm">
+                                          <cfinclude template="include/currentAccess.cfm">
                                           <cfif NOT isDefined('url.viewhour')>
                                           <cfif val(getCommunity.permanantguests)>
-                                          <cfinclude template="/staff/include/247Access.cfm">
+                                          <cfinclude template="include/247Access.cfm">
                                           </cfif><!--- end community 24/7 IF block --->
                                           </cfif>
                                           <cfcatch>
