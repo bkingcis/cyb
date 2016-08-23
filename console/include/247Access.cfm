@@ -2,7 +2,7 @@
  <cfoutput>
   <div class="panel panel-default">
       <div class="panel-heading">
-          <i class="fa fa-bar-chart-o fa-fw"></i> <cfoutput>#labels.permanent_visitor# #labels.visitor#s</cfoutput>
+          <i class="fa fa-key-o fa-fw"></i> <cfoutput>#labels.permanent_visitor# #labels.visitor#s</cfoutput>
           <div class="pull-right">
               <div class="btn-group">
                   <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -32,23 +32,32 @@
           <thead>
               <tr>
                   <th>#labels.Visitor#</th>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th>Amount</th>
+                  <th>Phone</th>
+                  <th>Unit</th>
+                  <th>DashPass</th>
+                  <th>Action</th>                  
               </tr>
           </thead>
           <tbody>
               <tr>
                   <td>Bill King</td>
-                  <td>10/21/2013</td>
-                  <td>3:29 PM</td>
-                  <td>$321.33</td>
+                  <td>303-332-3373</td>
+                  <td>1209-F</td>
+                  <td>
+                    <input type="button" value="print" class="action-btn" onclick="ReissueAndPrintPop(1903,890);">
+                    <a href="/staff/popup/emailPass.cfm?g_id=890&amp;v_id=1903" class="extlink action-btn">email</a>
+                  </td>
+                  <td><input type="button" value="Check-In" class="action-btn" onclick="GuestCheckin(1903,890);"></td>
               </tr>
-              <tr>
-                  <td>3325</td>
-                  <td>10/21/2013</td>
-                  <td>3:20 PM</td>
-                  <td>$234.34</td>
+             <tr>
+                  <td>Bill King</td>
+                  <td>303-332-3373</td>
+                  <td>1209-F</td>
+                  <td>
+                    <input type="button" value="print" class="action-btn" onclick="ReissueAndPrintPop(1903,890);">
+                    <a href="/staff/popup/emailPass.cfm?g_id=890&amp;v_id=1903" class="extlink action-btn">email</a>
+                  </td>
+                  <td><input type="button" value="Check-In" class="action-btn" onclick="GuestCheckin(1903,890);"></td>
               </tr>
               <tr>
                   <td>3324</td>
