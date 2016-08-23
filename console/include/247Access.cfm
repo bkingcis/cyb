@@ -1,7 +1,33 @@
  <!-- include/247Access -->
  <cfoutput>
- <h3>#labels.permanent_visitor#</h3>
- <div class="table-responsive">
+  <div class="panel panel-default">
+      <div class="panel-heading">
+          <i class="fa fa-bar-chart-o fa-fw"></i> <cfoutput>#labels.permanent_visitor# #labels.visitor#s</cfoutput>
+          <div class="pull-right">
+              <div class="btn-group">
+                  <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                      Actions
+                      <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                      <li><a href="#">Action</a>
+                      </li>
+                      <li><a href="#">Another action</a>
+                      </li>
+                      <li><a href="#">Something else here</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <!-- /.panel-heading -->
+      <div class="panel-body">
+          <div class="row">
+              <div class="col-lg-4">
+                 <div class="table-responsive">
       <table class="table table-bordered table-hover table-striped">
           <thead>
               <tr>
@@ -63,5 +89,18 @@
           </tbody>
       </table>
   </div>
-  <!-- /.table-responsive -->
+ <!-- /.table-responsive -->
+               </div>
+            <!-- /.col-lg-4 (nested) -->
+            <div class="col-lg-8">
+                <div id="morris-bar-chart"></div>
+            </div>
+            <!-- /.col-lg-8 (nested) -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.panel-body -->
+</div>
+<!-- /.panel -->
+                    
   </cfoutput>
