@@ -10,14 +10,14 @@
                       <span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu pull-right" role="menu">
-                      <li><a href="#">Action</a>
+                      <li><a href="##">Action</a>
                       </li>
-                      <li><a href="#">Another action</a>
+                      <li><a href="##">Another action</a>
                       </li>
-                      <li><a href="#">Something else here</a>
+                      <li><a href="##">Something else here</a>
                       </li>
                       <li class="divider"></li>
-                      <li><a href="#">Separated link</a>
+                      <li><a href="##">Separated link</a>
                       </li>
                   </ul>
               </div>
@@ -39,7 +39,7 @@
           </thead>
           <tbody>
               <tr>
-                  <td>3326</td>
+                  <td>Bill King</td>
                   <td>10/21/2013</td>
                   <td>3:29 PM</td>
                   <td>$321.33</td>
@@ -79,12 +79,6 @@
                   <td>10/21/2013</td>
                   <td>2:15 PM</td>
                   <td>$5663.54</td>
-              </tr>
-              <tr>
-                  <td>3319</td>
-                  <td>10/21/2013</td>
-                  <td>2:13 PM</td>
-                  <td>$943.45</td>
               </tr>
           </tbody>
       </table>
