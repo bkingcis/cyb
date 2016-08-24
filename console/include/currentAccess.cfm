@@ -106,6 +106,7 @@
                        </cfoutput>
                       </tbody>
                   </table>
+                  <cfif not GetSchedule.recordcount><p>No results</p></cfif>
               </div>
               <!-- /.table-responsive -->
         </div>
