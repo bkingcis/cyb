@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<cfsilent>
+  <cfset session.user_community = 55>
+  <cfset request.hidesubtitle = true>
+  <cfquery name="getCommunity" datasource="#request.dsn#">
+    select * from communities 
+    where c_id = <cfqueryparam cfsqltype="CF_SQL_INTEGER" value="#session.user_community#" />
+  </cfquery>
+</cfsilent><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -346,24 +353,17 @@
             <div class="row">
                 <div class="col-lg-8">
                    
-                   
-                                    <cftry>
-                                      <cfset session.user_community = 55>
-                                      <cfset request.hidesubtitle = true>
-                                      <cfquery name="getCommunity" datasource="#request.dsn#">
-                                        select * from communities 
-                                        where c_id = <cfqueryparam cfsqltype="CF_SQL_INTEGER" value="#session.user_community#" />
-                                      </cfquery>
-                                      <cfinclude template="include/currentAccess.cfm">
-                                      <cfif NOT isDefined('url.viewhour')>
-                                      <cfif val(getCommunity.permanantguests)>
-                                      <cfinclude template="include/247Access.cfm">
-                                      </cfif><!--- end community 24/7 IF block --->
-                                      </cfif>
-                                      <cfcatch>
-                                      <cfoutput>#cfcatch.message#</cfoutput>
-                                      </cfcatch>
-                                    </cftry>
+                    <cftry>
+                      <cfinclude template="include/currentAccess.cfm">
+                      <cfif NOT isDefined('url.viewhour')>
+                      <cfif val(getCommunity.permanantguests)>
+                      <cfinclude template="include/247Access.cfm">
+                      </cfif><!--- end community 24/7 IF block --->
+                      </cfif>
+                      <cfcatch>
+                      <cfoutput>#cfcatch.message#</cfoutput>
+                      </cfcatch>
+                    </cftry>
                                 
                 </div>
                 <!-- /.col-lg-8 -->
