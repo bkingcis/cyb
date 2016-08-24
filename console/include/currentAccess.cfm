@@ -103,7 +103,7 @@
                               <td><input type="button" value="Check-In" class="btn btn-sm" onclick="GuestCheckin(#v_id#,#g_id#);"></td>
                           </tr>
                          </cfif>
-                       <cfoutput>
+                       </cfoutput>
                       </tbody>
                   </table>
               </div>
